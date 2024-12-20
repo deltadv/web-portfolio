@@ -79,7 +79,7 @@ const ParticlesComponent = () => {
     <Particles
       id="particles-background"
       options={options}
-      className="fixed top-0 left-0 w-full h-full -z-10 bg-white dark:bg-gray-800"
+      className="fixed top-0 left-0 w-full h-screen -z-10 bg-white dark:bg-gray-800"
     />
   );
 };

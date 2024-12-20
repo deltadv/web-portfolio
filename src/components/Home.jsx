@@ -8,7 +8,7 @@ const Home = ({ isNavOpen }) => {
   return (
     <section
       name="home"
-      className="w-full h-screen flex flex-col justify-center items-center px-4"
+      className="w-full h-screen flex flex-col justify-center items-center px-4 overflow-hidden"
     >
       {/* Nama dan Title */}
       <h2 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-[#00BFFF] text-center"> {/* Changed to Tomato */}

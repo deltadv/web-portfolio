@@ -25,7 +25,7 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div className="relative w-full h-auto overflow-x-hidden">
       <ParticlesComponent />
       <Navbar toggleNav={setIsNavOpen} />
       <Home isNavOpen={isNavOpen} />
