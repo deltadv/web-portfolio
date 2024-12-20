@@ -25,7 +25,7 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col justify-between">
+    <div>
       <ParticlesComponent />
       <Navbar toggleNav={setIsNavOpen} />
       <Home isNavOpen={isNavOpen} />
