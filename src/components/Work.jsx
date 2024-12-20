@@ -14,11 +14,10 @@ const projects = [
   },
   {
     type: "code",
-    title: "Weather App",
-    description:
-      "A responsive weather application built with React and Tailwind CSS.",
-    demoUrl: "",
-    repoUrl: "https://github.com/deltadv/weather-app",
+    title: "Portfolio Website",
+    description: "Personal portfolio built with React and Tailwind CSS.",
+    demoUrl: "https://deltadv.github.io/web-portfolio",
+    repoUrl: "https://github.com/deltadv/web-portfolio",
     technologies: ["React", "Tailwind CSS"],
   },
   {
@@ -31,10 +30,11 @@ const projects = [
   },
   {
     type: "code",
-    title: "Portfolio Website",
-    description: "Personal portfolio built with React and Tailwind CSS.",
+    title: "Weather App",
+    description:
+      "A simple weather app built with React and Tailwind CSS.",
     demoUrl: "",
-    repoUrl: "",
+    repoUrl: "https://github.com/deltadv/weather-app",
     technologies: ["React", "Tailwind CSS"],
   },
   {
@@ -52,7 +52,7 @@ const projects = [
     description: "UI/UX design for a Javanese script learning app.",
     demoUrl:
       "https://www.figma.com/proto/1U8mmgLu5yvqTST0iuuMRY/Javaksa?page-id=0%3A1&node-id=1-385&viewport=827%2C1594%2C0.59&t=Hc7mvxUQF17xHOTk-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A385",
-    repoUrl: "",
+    repoUrl: "https://www.figma.com/design/1U8mmgLu5yvqTST0iuuMRY/Javaksa?node-id=0-1&t=lb2LR3dk6sQBDva9-1",
     technologies: ["Figma"],
   },
 ];

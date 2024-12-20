@@ -46,7 +46,7 @@ const Home = ({ isNavOpen }) => {
           Hire Me
         </a>
         <a
-          href="https://drive.google.com/file/d/1BacS1iY7BQDT0UW0_9PtBvyKxgdjvAgu/view?usp=drive_link"
+          href="https://docs.google.com/uc?export=download&id=1PURImFU21BLdMENsFkGr2hamEbeCknO7"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center justify-center text-white bg-gray-800 hover:bg-gray-900 dark:bg-gray-600 dark:hover:bg-gray-700 py-3 px-6 rounded-md text-center"
