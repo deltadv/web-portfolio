@@ -1,136 +1,108 @@
-import React, { useState } from "react";
-import {
-  FaBars,
-  FaTimes,
-  FaGithub,
-  FaLinkedin,
-  FaInstagram,
-} from "react-icons/fa";
-import { TbMailFilled } from "react-icons/tb";
-import { Link } from "react-scroll";
-import ThemeToggle from "./ThemeToggle";
+import { GrInstagram } from "react-icons/gr";
+import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { SiGmail } from "react-icons/si";
+import avatar from "../assets/avatar.png";
 
-const Navbar = ({ toggleNav }) => {
-  const [nav, setNav] = useState(false);
-
-  const handleClick = () => {
-    setNav(!nav);
-    toggleNav(!nav);
-  };
-
-  const menuItems = ["skills", "work", "contact"];
-
+const Navbar = () => {
   return (
-    <nav className="fixed w-full h-[60px] flex justify-center items-center px-4 bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-semibold z-10">
+    <nav className="w-full h-[90px] flex justify-center items-center px-4 bg-transparent font-semibold z-10">
       {/* Logo */}
-      <div className="absolute left-4 cursor-pointer">
-        <Link
-          to="home"
-          smooth={true}
-          duration={500}
-          className="text-xl text-[#00BFFF]"
+      <div className="absolute left-7 cursor-pointer">
+        <img
+          src={avatar}
+          alt="Avatar"
+          className="w-10 h-10 object-cover rounded-full"
+        />
+      </div>
+
+      {/* Social Media Links - Visible on mobile and medium screens */}
+      <div className="absolute items-center right-7 flex space-x-4 lg:hidden text-[#898989]">
+        <a
+          href="https://www.instagram.com/devaraja_"
+          className="text-xl"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          DevaScript
-        </Link>
+          <GrInstagram />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/deva-raja"
+          className="text-xl"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <BsLinkedin />
+        </a>
+        <a
+          href="https://github.com/deltadv"
+          className="text-xl"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <BsGithub />
+        </a>
+        <a
+          href="mailto:deltadv.code@gmail.com"
+          className="text-xl"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <SiGmail />
+        </a>
+        <a
+          href="https://drive.google.com/file/d/1c5dfdl71wL72OqQfWb9ReBPCIGn6rq8x/view?usp=drive_link"
+          className="font-normal text-[12px] tracking-wide text-[#FFFFFF] px-4 py-2 border border-[#555555] rounded-sm transition-colors duration-300 bg-[#121212] hover:bg-[#2A2A2A]"
+          aria-label="Download CV"
+        >
+          CV
+        </a>
       </div>
 
-      {/* Menu untuk desktop (ukuran layar >= 1280px) */}
-      <ul className="hidden xl:flex space-x-6">
-        {menuItems.map((item) => (
-          <li key={item}>
-            <Link
-              to={item}
-              smooth={true}
-              duration={500}
-              className="dark:hover:text-[#00BFFF] hover:text-[#00BFFF]"
-              aria-label={item}
-            >
-              {item.charAt(0).toUpperCase() + item.slice(1)}
-            </Link>
-          </li>
-        ))}
-      </ul>
-
-      {/* Toggle Theme */}
-      <div className="absolute right-16">
-        <ThemeToggle />
+      {/* Social Media Links - Visible on large screens */}
+      <div className="absolute left-36 hidden lg:flex space-x-10 text-[#898989]">
+        <a
+          href="https://www.instagram.com/devaraja_"
+          className="text-[12px] tracking-wider hover:text-[#FFFFFF]"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
+        <a
+          href="https://www.linkedin.com/in/deva-raja"
+          className="text-[12px] tracking-wider hover:text-[#FFFFFF]"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+        <a
+          href="https://github.com/deltadv"
+          className="text-[12px] tracking-wider hover:text-[#FFFFFF]"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
       </div>
 
-      {/* Hamburger untuk layar < 1280px */}
-      <div onClick={handleClick} className="absolute right-4 xl:hidden z-10">
-        {nav ? (
-          <FaTimes aria-label="Close menu" />
-        ) : (
-          <FaBars aria-label="Open menu" />
-        )}
-      </div>
-
-      {/* Menu untuk mobile dan tablet */}
-      <ul
-        className={`absolute top-0 left-0 w-full h-screen bg-gray-100 dark:bg-gray-800 flex flex-col justify-center items-center ${
-          nav ? "block" : "hidden"
-        } xl:hidden`}
-      >
-        {menuItems.map((item) => (
-          <li key={item} className="py-6 text-4xl">
-            <Link
-              onClick={handleClick}
-              to={item}
-              smooth={true}
-              duration={500}
-              aria-label={item}
-            >
-              {item.charAt(0).toUpperCase() + item.slice(1)}
-            </Link>
-          </li>
-        ))}
-      </ul>
-
-      {/* Social Icons untuk layar >= 1280px */}
-      <div className="hidden xl:flex fixed flex-col top-[35%] left-0">
-        <ul>
-          {[
-            {
-              href: "https://linkedin.com/in/deva-raja",
-              icon: <FaLinkedin size={30} />,
-              label: "Linkedin",
-              bg: "bg-[#0A66C2]",
-            },
-            {
-              href: "mailto:deltadv.code@gmail.com",
-              icon: <TbMailFilled size={30} />,
-              label: "Email",
-              bg: "bg-[#DB4437]",
-            },
-            {
-              href: "https://github.com/deltadv",
-              icon: <FaGithub size={30} />,
-              label: "GitHub",
-              bg: "bg-[#181717]",
-            },
-            {
-              href: "https://instagram.com/devaraja_",
-              icon: <FaInstagram size={30} />,
-              label: "Instagram",
-              bg: "bg-[#E1306C]",
-            },
-          ].map(({ href, icon, label, bg }) => (
-            <li
-              key={label}
-              className={`w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 ${bg}`}
-            >
-              <a
-                className="flex justify-between items-center w-full font-medium text-gray-100"
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={label}
-              >
-                {label} {icon}
-              </a>
-            </li>
-          ))}
-        </ul>
+      {/* Email and CV */}
+      <div className="absolute right-7 hidden lg:flex space-x-4">
+        <a
+          href="mailto:deltadv.code@gmail.com"
+          className="font-normal text-[12px] tracking-wide text-[#FFFFFF] px-4 py-2 border border-[#555555] rounded-sm transition-colors duration-300 bg-[#121212] hover:bg-[#2A2A2A]"
+          aria-label="Email Deva"
+        >
+          deltadv.code@gmail.com
+        </a>
+        <a
+          href="https://drive.google.com/file/d/1c5dfdl71wL72OqQfWb9ReBPCIGn6rq8x/view?usp=drive_link"
+          className="font-normal text-[12px] tracking-wide text-[#FFFFFF] px-4 py-2 border border-[#555555] rounded-sm transition-colors duration-300 bg-[#121212] hover:bg-[#2A2A2A]"
+          aria-label="Download CV"
+          download
+        >
+          CV
+        </a>
       </div>
     </nav>
   );

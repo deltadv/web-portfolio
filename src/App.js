@@ -1,40 +1,31 @@
-import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
-import Skills from "./components/Skills";
-import Work from "./components/Work";
-import Contact from "./components/Contact";
+import Gallery from "./components/Gallery";
+import About from "./components/About";
+import GalleryLagi from "./components/GalleryLagi";
 import Footer from "./components/Footer";
-import ParticlesComponent from './components/Particles';
+import PokemonUnite from "./components/PokemonUnite";
+import Plantique from "./components/Plantique";
+import Dkampus from "./components/Dkampus";
+import BackToTopButton from "./components/BackToTop";
+import Quote from "./components/Quote";
 
-function App() {
-  const [isNavOpen, setIsNavOpen] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth >= 768) {
-        setIsNavOpen(false);
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
+const App = () => {
   return (
-    <div className="relative w-full h-auto overflow-x-hidden">
-      <ParticlesComponent />
-      <Navbar toggleNav={setIsNavOpen} />
-      <Home isNavOpen={isNavOpen} />
-      <Skills />
-      <Work />
-      <Contact />
+    <div className="relative w-full h-auto bg-[#121212] overflow-x-hidden">
+      <Navbar />
+      <Home />
+      <Gallery />
+      <About />
+      <GalleryLagi />
+      <Quote />
+      <Plantique />
+      <PokemonUnite />
+      <Dkampus />
       <Footer />
+      <BackToTopButton />
     </div>
   );
-}
+};
 
 export default App;
