@@ -33,7 +33,7 @@ const About = () => {
             waktu luang saya dengan nonton, entah itu nonton film, <span className="italic">series</span>,
             ataupun <span className="italic">anime</span>. Saya suka banget sama <span className="italic">series</span> <span className="font-medium text-[#a6a6a6]">Dark</span>. Series ini tuh
             tentang perjalanan waktu, misteri, dan keterkaitan antara masa lalu,
-            sekarang, dan masa depan. Kalau kalian suka cerita yang plot yang
+            sekarang, dan masa depan. Kalau kalian suka cerita dengan plot yang
             bikin pusing, penuh <span className="italic">twist</span>, dan ada unsur <span className="italic">sci-fi</span>, saya bisa
             rekomendasiin banget buat nonton <span className="italic">series</span> ini.
           </p>
