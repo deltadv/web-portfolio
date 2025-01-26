@@ -19,7 +19,7 @@ const PokemonUnite = () => {
             </h1>
             {/* Deskripsi */}
             <p className="text-[#797a8a] text-sm sm:text-base md:text-lg leading-relaxed md:leading-loose tracking-wide">
-              Desain ulang landing page Pokémon Unite ini dibuat biar
+              Desain ulang <span className="italic">landing page</span> Pokémon Unite ini dibuat biar
               tampilannya lebih modern dan keren. Desainnya fokus ke
               elemen-elemen visual yang lebih{" "}
               <span className="italic">fresh</span>, tetap simpel, tapi tetap
@@ -46,14 +46,14 @@ const PokemonUnite = () => {
           <img
             src={Unite}
             alt="Pokemon Unite"
-            className="hidden sm:block w-full h-auto object-cover"
+            className="w-full h-auto object-cover"
           />
           {/* Gambar mobile */}
-          <img
+          {/* <img
             src={UniteMobile}
             alt="Pokemon Unite Mobile"
             className="block sm:hidden w-full h-auto object-cover"
-          />
+          /> */}
         </div>
       </div>
     </div>
