@@ -22,7 +22,7 @@ const Plantique = () => {
               tanaman. Desainnya dibuat biar kelihatan adem, simpel, dan
               tentunya nyaman dipakai. Fokusnya ada di estetika yang bikin
               betah <span className="italic">scrolling</span>, sambil tetap ngasih kemudahan buat nyari dan
-              beli tanaman yang diinginkan. Pas banget buat yang suka taneman
+              beli tanaman yang diinginkan. Pas banget buat yang suka tanaman
               atau lagi mulai hobi berkebun.
             </p>
           </div>

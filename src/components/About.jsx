@@ -13,7 +13,7 @@ const About = () => {
         {/* Deskripsi */}
         <div className="text-[#666666] tracking-wide leading-7">
           <p>
-            Seorang <span className="italic">User Interface Designer</span>, saat ini tinggal di Sukabumi yang
+            Seorang UI/UX Designer, saat ini tinggal di Sukabumi yang
             punya bakmi non-halal terenak menurut saya. Saya pribadi suka desain
             yang <span className="italic">simple</span>, <span className="italic">clean</span>, dan ga berlebihan. Kalau bisa sih, setiap elemen
             punya fungsi yang jelas dan ga ada yang mubazir. Oh iya, saya juga
