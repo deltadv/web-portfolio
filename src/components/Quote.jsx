@@ -2,7 +2,7 @@ import React from "react";
 
 const Quote = () => {
   return (
-    <div className="relative w-full h-auto flex flex-col justify-center items-center px-6 sm:px-12 md:px-16 lg:px-28 py-12 lg:py-20 bg-[#121212]">
+    <div className="relative w-full h-auto flex flex-col justify-center items-center px-6 sm:px-12 md:px-16 lg:px-40 py-12 lg:py-20 bg-[#121212]">
       {/* Container untuk Quote */}
       <div className="text-center flex flex-col items-center justify-center space-y-6">
         {/* Quote Text */}

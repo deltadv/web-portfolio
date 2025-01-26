@@ -3,7 +3,7 @@ import PlantiqueImg from "../assets/plantique.png";
 
 const Plantique = () => {
   return (
-    <div className="bg-[#DFE2EF] text-white px-6 sm:px-12 md:px-16 lg:px-28 py-12 lg:py-20">
+    <div className="bg-[#DFE2EF] text-white px-6 sm:px-12 md:px-16 lg:px-44 py-12 lg:py-20">
       <div className="max-w-screen-xl mx-auto">
         {/* Tanggal */}
         <p className="text-[#A9ABBA] text-xs sm:text-sm mb-4 tracking-wide">

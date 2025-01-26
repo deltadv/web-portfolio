@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="relative w-full h-auto flex flex-col justify-center px-6 sm:px-12 md:px-16 lg:px-28 py-12 overflow-hidden items-center bg-[#121212]">
+    <div className="relative w-full h-auto flex flex-col justify-center px-6 sm:px-12 md:px-16 lg:px-40 py-12 overflow-hidden items-center bg-[#121212]">
       {/* Container untuk judul dan deskripsi */}
       <div className="relative flex flex-col items-start justify-start space-y-8">
         {/* Judul */}
@@ -38,8 +38,7 @@ const About = () => {
             rekomendasiin banget buat nonton <span className="italic">series</span> ini.
           </p>
           <p className="mt-4">
-            Mungkin segitu aja dari saya. Terima kasih sudah meluangkan waktu untuk membaca. Saya harap saya
-            bisa terus berbagi dan belajar lebih banyak lagi.
+            Mungkin segitu aja dari saya. Terima kasih sudah meluangkan waktu untuk membaca.
           </p>
         </div>
       </div>

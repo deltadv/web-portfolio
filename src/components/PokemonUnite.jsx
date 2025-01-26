@@ -4,7 +4,7 @@ import UniteMobile from "../assets/pokemon-unite-mobile.png";
 
 const PokemonUnite = () => {
   return (
-    <div className="bg-[#0B0E17] text-white px-6 sm:px-12 md:px-16 lg:px-28 py-12 lg:py-20">
+    <div className="bg-[#0B0E17] text-white px-6 sm:px-12 md:px-16 lg:px-40 py-12 lg:py-20">
       <div className="max-w-screen-xl mx-auto">
         {/* Tanggal */}
         <p className="text-[#4b4c55] text-xs sm:text-sm mb-4 tracking-wide">
