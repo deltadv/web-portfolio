@@ -3,7 +3,6 @@ import Home from "./components/Home";
 import Gallery from "./components/Gallery";
 import About from "./components/About";
 import GalleryLagi from "./components/GalleryLagi";
-import Footer from "./components/Footer";
 import PokemonUnite from "./components/PokemonUnite";
 import Plantique from "./components/Plantique";
 import Dkampus from "./components/Dkampus";
@@ -22,7 +21,6 @@ const App = () => {
       <Plantique />
       <PokemonUnite />
       <Dkampus />
-      <Footer />
       <BackToTopButton />
     </div>
   );
