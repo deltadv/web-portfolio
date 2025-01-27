@@ -3,7 +3,7 @@ import DkampusImg from "../assets/dkampus.png";
 
 const Dkampus = () => {
   return (
-    <div className="bg-[#1a1a1a] text-white px-6 sm:px-12 md:px-16 lg:px-64 py-12 lg:py-20">
+    <div className="bg-[#1a1a1a] text-white px-6 sm:px-12 md:px-16 lg:px-40 py-12 lg:py-20">
       <div className="max-w-screen-xl mx-auto">
         {/* Tanggal */}
         <p className="text-[#4b4c55] text-xs sm:text-sm mb-4 tracking-wide">
