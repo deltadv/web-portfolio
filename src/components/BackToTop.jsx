@@ -23,7 +23,7 @@ export default function BackToTopButton() {
       {showButton && (
         <button
           onClick={() => scroll.scrollToTop({ duration: 500, smooth: true })}
-          className="fixed bottom-5 right-5 text-xs font-medium tracking-wider bg-white text-[#121212] px-3 py-2 rounded-sm shadow-sm flex items-center space-x-1"
+          className="fixed bottom-5 right-5 text-xs font-medium tracking-wide bg-white text-[#121212] px-3 py-2 rounded-sm shadow-sm flex items-center space-x-1"
         >
           <span>Back to Top</span>
           <AiOutlineArrowUp className="h-4 w-4" /> {/* Mengganti SVG dengan React Icon */}

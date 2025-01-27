@@ -11,7 +11,7 @@ const About = () => {
         </h1>
 
         {/* Deskripsi */}
-        <div className="text-[#666666] tracking-wide leading-7">
+        <div className="text-[#666666] tracking-normal leading-7">
           <p>
             Seorang UI/UX Designer, saat ini tinggal di Sukabumi yang
             punya bakmi non-halal terenak menurut saya. Saya pribadi suka desain
