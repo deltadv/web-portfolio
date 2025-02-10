@@ -3,10 +3,10 @@ import DkampusImg from "../assets/dkampus.png";
 
 const Dkampus = () => {
   return (
-    <div className="bg-[#1a1a1a] text-white px-6 sm:px-12 md:px-16 lg:px-72 py-12 lg:py-20">
+    <div className="bg-[#121212] text-white px-6 sm:px-12 md:px-16 lg:px-72 py-12 lg:py-20">
       <div className="max-w-screen-xl mx-auto">
         {/* Date */}
-        <p className="text-[#4b4c55] text-xs sm:text-sm mb-4 tracking-wide">
+        <p className="text-[#5f606a] text-xs sm:text-sm mb-4 tracking-wide">
           December 2024
         </p>
         <div className="grid gap-12 lg:grid-cols-3">
@@ -18,11 +18,10 @@ const Dkampus = () => {
             </h1>
             {/* Description */}
             <p className="text-[#797a8a] text-sm sm:text-base md:text-lg leading-relaxed md:leading-loose tracking-wide">
-              Dkampus is an online food delivery app designed specifically for students 
-              who want quick and hassle-free access to meals. The design is simple, modern, 
-              and playful, making it easy for users to discover their favorite dishes. 
-              The app focuses on delivering a seamless user experience, ensuring that 
-              anyone can place an order quickly and effortlessly.
+              Dkampus is an online food delivery app for students seeking quick,
+              hassle-free meals. Its simple, modern, and playful design makes
+              finding favorite dishes easy. The app ensures a seamless
+              experience, allowing users to order effortlessly.
             </p>
           </div>
           {/* Right Section: Details */}

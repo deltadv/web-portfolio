@@ -8,6 +8,7 @@ import Plantique from "./components/Plantique";
 import Dkampus from "./components/Dkampus";
 import BackToTopButton from "./components/BackToTop";
 import Quote from "./components/Quote";
+import Boomburst from "./components/Boomburst";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <About />
       <GalleryLagi />
       <Quote />
+      <Boomburst />
       <Plantique />
       <PokemonUnite />
       <Dkampus />
