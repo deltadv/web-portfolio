@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/web-portfolio/static/css/main.00694b8c.css",
-    "main.js": "/web-portfolio/static/js/main.3e9821b5.js",
+    "main.js": "/web-portfolio/static/js/main.fa096a47.js",
     "static/media/pokemon-unite-mobile.png": "/web-portfolio/static/media/pokemon-unite-mobile.ec92ea5cfb32b5a8646a.png",
     "static/media/pokemon-unite.png": "/web-portfolio/static/media/pokemon-unite.752a8ee0c126aeb98d96.png",
     "static/media/3.png": "/web-portfolio/static/media/3.5c0fbfabfd041f1434ea.png",
     "static/media/5.png": "/web-portfolio/static/media/5.1b34bbecca0d4e51a3fe.png",
-    "static/media/boomburst.png": "/web-portfolio/static/media/boomburst.4de94f4851e8158c09a5.png",
+    "static/media/boomburst.png": "/web-portfolio/static/media/boomburst.f53e71276035335b2a32.png",
     "static/media/dkampus.png": "/web-portfolio/static/media/dkampus.eac645fe0037061ebd3f.png",
     "static/media/4.png": "/web-portfolio/static/media/4.cf5527b0ad4a8074fe0b.png",
     "static/media/1.png": "/web-portfolio/static/media/1.5d00df49491305eded65.png",
@@ -18,10 +18,10 @@
     "static/media/avatar.png": "/web-portfolio/static/media/avatar.2fb9040ed3bb11e4fc1e.png",
     "index.html": "/web-portfolio/index.html",
     "main.00694b8c.css.map": "/web-portfolio/static/css/main.00694b8c.css.map",
-    "main.3e9821b5.js.map": "/web-portfolio/static/js/main.3e9821b5.js.map"
+    "main.fa096a47.js.map": "/web-portfolio/static/js/main.fa096a47.js.map"
   },
   "entrypoints": [
     "static/css/main.00694b8c.css",
-    "static/js/main.3e9821b5.js"
+    "static/js/main.fa096a47.js"
   ]
 }
