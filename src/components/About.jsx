@@ -21,15 +21,15 @@ const About = () => {
           smallest details that I completely lose track of time.
         </p>
         <p>
-          I’m also a massive <span className="text-white font-medium">Pokémon</span> fan. If you’ve taken a close look at one of the pictures 
+          I’m also a massive <span className="text-[#a6a6a6] font-medium">Pokémon</span> fan. If you’ve taken a close look at one of the pictures 
           above, you might have spotted Zekrom, one of my favorite legendary Pokémon. But if we’re talking 
           all-time favorite, Lucario has my heart. I’ve played nearly every main series 
-          <span className="text-white font-medium"> Pokémon</span> game out there, so if you’re a fellow fan, let’s talk—I could geek out 
+          <span className="text-[#a6a6a6] font-medium"> Pokémon</span> game out there, so if you’re a fellow fan, let’s talk—I could geek out 
           about Pokémon for hours.
         </p>
         <p>
           When I’m not designing or battling in a Pokémon game, you’ll usually find me watching something—movies, 
-          series, or even anime. One of my all-time favorite shows is <span className="text-white font-medium">Dark</span>. It’s this 
+          series, or even anime. One of my all-time favorite shows is <span className="text-[#a6a6a6] font-medium">Dark</span>. It’s this 
           mind-bending time-travel mystery that weaves together the past, present, and future in the most fascinating way. 
           If you love intricate plots, unexpected twists, and a dash of sci-fi, you absolutely have to check it out.
         </p>
