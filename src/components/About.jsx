@@ -14,7 +14,7 @@ const About = () => {
       <div className="lg:w-1/2 text-[#666666] space-y-6 leading-relaxed">
         <p>
           Hi there! I’m a UI/UX designer living in Sukabumi, a city known (at least to me) 
-          for having the best non-halal noodles ever. When it comes to design, I’m all 
+          for having the best bakmi ever. When it comes to design, I’m all 
           about keeping things simple, clean, and functional. I believe every element 
           in a design should have a purpose—no fluff, no waste. Oh, and I’m pretty 
           detail-oriented, which means I sometimes get so caught up in perfecting the 
