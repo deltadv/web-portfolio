@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/web-portfolio/static/css/main.00694b8c.css",
-    "main.js": "/web-portfolio/static/js/main.b89db0df.js",
+    "main.js": "/web-portfolio/static/js/main.e823a854.js",
     "static/media/pokemon-unite-mobile.png": "/web-portfolio/static/media/pokemon-unite-mobile.ec92ea5cfb32b5a8646a.png",
     "static/media/pokemon-unite.png": "/web-portfolio/static/media/pokemon-unite.752a8ee0c126aeb98d96.png",
     "static/media/3.png": "/web-portfolio/static/media/3.5c0fbfabfd041f1434ea.png",
     "static/media/5.png": "/web-portfolio/static/media/5.1b34bbecca0d4e51a3fe.png",
     "static/media/boomburst.png": "/web-portfolio/static/media/boomburst.182d6472ddc0772cbbe3.png",
-    "static/media/dkampus.png": "/web-portfolio/static/media/dkampus.eac645fe0037061ebd3f.png",
+    "static/media/dkampus.png": "/web-portfolio/static/media/dkampus.5d9d371e52db6454a7ca.png",
     "static/media/4.png": "/web-portfolio/static/media/4.cf5527b0ad4a8074fe0b.png",
     "static/media/1.png": "/web-portfolio/static/media/1.5d00df49491305eded65.png",
     "static/media/8.png": "/web-portfolio/static/media/8.5dcac3b4c0c07995f696.png",
@@ -18,10 +18,10 @@
     "static/media/avatar.png": "/web-portfolio/static/media/avatar.2fb9040ed3bb11e4fc1e.png",
     "index.html": "/web-portfolio/index.html",
     "main.00694b8c.css.map": "/web-portfolio/static/css/main.00694b8c.css.map",
-    "main.b89db0df.js.map": "/web-portfolio/static/js/main.b89db0df.js.map"
+    "main.e823a854.js.map": "/web-portfolio/static/js/main.e823a854.js.map"
   },
   "entrypoints": [
     "static/css/main.00694b8c.css",
-    "static/js/main.b89db0df.js"
+    "static/js/main.e823a854.js"
   ]
 }
