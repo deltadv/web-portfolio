@@ -1,5 +1,5 @@
 import React from "react";
-import PlantiqueImg from "../assets/plantique.png";
+import PlantiqueImg from "../../assets/plantique.png";
 
 const Plantique = () => {
   return (

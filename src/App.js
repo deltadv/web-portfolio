@@ -3,12 +3,12 @@ import Home from "./components/Home";
 import Gallery from "./components/Gallery";
 import About from "./components/About";
 import GalleryLagi from "./components/GalleryLagi";
-import PokemonUnite from "./components/PokemonUnite";
-import Plantique from "./components/Plantique";
-import Dkampus from "./components/Dkampus";
+import PokemonUnite from "./components/project/PokemonUnite";
+import Plantique from "./components/project/Plantique";
+import Dkampus from "./components/project/Dkampus";
 import BackToTopButton from "./components/BackToTop";
 import Quote from "./components/Quote";
-import Boomburst from "./components/Boomburst";
+import Boomburst from "./components/project/Boomburst";
 
 const App = () => {
   return (
