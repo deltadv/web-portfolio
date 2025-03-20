@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/web-portfolio/static/css/main.dba570f8.css",
-    "main.js": "/web-portfolio/static/js/main.b5c36e70.js",
+    "main.css": "/web-portfolio/static/css/main.e58cca12.css",
+    "main.js": "/web-portfolio/static/js/main.d3eb74f5.js",
     "static/media/pokemon-unite.png": "/web-portfolio/static/media/pokemon-unite.752a8ee0c126aeb98d96.png",
     "static/media/3.png": "/web-portfolio/static/media/3.9c3fe6d81eaa25031458.png",
     "static/media/5.png": "/web-portfolio/static/media/5.1b34bbecca0d4e51a3fe.png",
@@ -16,11 +16,11 @@
     "static/media/2.png": "/web-portfolio/static/media/2.540ceab43b6d63e30f17.png",
     "static/media/avatar.png": "/web-portfolio/static/media/avatar.2fb9040ed3bb11e4fc1e.png",
     "index.html": "/web-portfolio/index.html",
-    "main.dba570f8.css.map": "/web-portfolio/static/css/main.dba570f8.css.map",
-    "main.b5c36e70.js.map": "/web-portfolio/static/js/main.b5c36e70.js.map"
+    "main.e58cca12.css.map": "/web-portfolio/static/css/main.e58cca12.css.map",
+    "main.d3eb74f5.js.map": "/web-portfolio/static/js/main.d3eb74f5.js.map"
   },
   "entrypoints": [
-    "static/css/main.dba570f8.css",
-    "static/js/main.b5c36e70.js"
+    "static/css/main.e58cca12.css",
+    "static/js/main.d3eb74f5.js"
   ]
 }
