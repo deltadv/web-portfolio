@@ -27,7 +27,7 @@ const Boomburst = () => {
               { title: "Font", detail: "Oxygen" }
             ].map((item, index) => (
               <div key={index} className="text-sm md:text-sm">
-                <h3 className="font-semibold mb-1 text-[#00BFFF] font-oxygen text-base md:text-lg">
+                <h3 className="font-semibold mb-1 text-[#00BFFF] font-caveat text-base md:text-lg">
                   {item.title}
                 </h3>
                 <p className="text-gray-600 dark:text-[#797a8a]">{item.detail}</p>
