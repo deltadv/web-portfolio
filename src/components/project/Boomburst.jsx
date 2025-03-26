@@ -1,53 +1,72 @@
-import React from "react";
+import React, { useState } from "react";
 import BoomburstImg from "../../assets/boomburst.png";
 
 const Boomburst = () => {
+  const [isImageOpen, setIsImageOpen] = useState(false);
+
   return (
-    <div className="bg-[#171717] text-white px-6 sm:px-12 md:px-16 lg:px-72 py-12 lg:py-20">
-      <div className="max-w-screen-xl mx-auto">
-        {/* Date */}
-        <p className="text-[#5f606a] text-xs sm:text-sm mb-4 tracking-wide">
-          February 2025
+    <section className="bg-transparent text-gray-900 dark:text-white pt-8 sm:pt-6 pb-12 lg:pb-20 px-6 sm:px-8 md:px-16 lg:px-24">
+      <div className="max-w-5xl mx-auto">
+        <p className="text-gray-500 dark:text-[#5f606a] text-xs md:text-sm mb-6 tracking-wider">
+          January 2025
         </p>
-        <div className="grid gap-12 lg:grid-cols-3">
-          {/* Left Section */}
-          <div className="lg:col-span-2">
-            {/* Title */}
-            <h1 className="text-[28px] sm:text-[36px] md:text-[48px] font-semibold mb-6 leading-tight md:leading-snug tracking-normal">
+
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-16">
+          <div className="lg:w-2/3 space-y-6 lg:space-y-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
               Boomburst: Music Player App
             </h1>
-            {/* Description */}
-            <p className="text-[#797a8a] text-sm sm:text-base md:text-lg leading-relaxed md:leading-loose tracking-wide">
-              Boomburst is a modern music player with a clean layout,
-              dark theme, and vibrant accents. It makes exploring favorite
-              tracks and discovering new music effortless and fun—perfect for
-              those who want their music experience to look as good as it
-              sounds.
+            <p className="text-gray-700 dark:text-[#8c8d9e] text-sm md:text-base leading-loose">
+              A music player app designed for young generations, offering high-quality streaming, personalized playlists, and an immersive listening experience.
             </p>
           </div>
-          {/* Right Section: Details */}
-          <div className="space-y-6 lg:pl-28 lg:pt-4">
-            <div className="text-xs sm:text-sm leading-relaxed tracking-wide">
-              <h3 className="font-medium pb-1 text-white">Design Tool</h3>
-              <p className="text-[#797a8a]">Figma</p>
-            </div>
-            <div className="text-xs sm:text-sm leading-relaxed tracking-wide">
-              <h3 className="font-medium pb-1 text-white">Font</h3>
-              <p className="text-[#797a8a]">Oxygen</p>
-            </div>
+
+          <div className="lg:w-1/3 space-y-6 lg:space-y-5">
+            {[
+              { title: "Design Tool", detail: "Figma" },
+              { title: "Font", detail: "Oxygen" }
+            ].map((item, index) => (
+              <div key={index} className="text-sm md:text-sm">
+                <h3 className="font-semibold mb-1 text-[#00BFFF] font-oxygen text-base md:text-lg">
+                  {item.title}
+                </h3>
+                <p className="text-gray-600 dark:text-[#797a8a]">{item.detail}</p>
+              </div>
+            ))}
           </div>
         </div>
 
-        {/* Image */}
-        <div className="mt-12 w-full">
-          <img
-            src={BoomburstImg}
-            alt="Boomburst App"
-            className="w-full h-auto object-cover"
-          />
+        <div className="mt-12 lg:mt-10">
+          <button
+            onClick={() => setIsImageOpen(true)}
+            aria-label="Preview Boomburst App"
+            className="w-full"
+          >
+            <img
+              src={BoomburstImg}
+              alt="Tampilan Aplikasi Boomburst"
+              className="w-full h-auto object-cover cursor-pointer"
+            />
+          </button>
         </div>
       </div>
-    </div>
+
+      {isImageOpen && (
+        <div className="fixed inset-0 flex items-center justify-center z-50">
+          <div
+            className="absolute inset-0 bg-black bg-opacity-30 backdrop-blur-sm"
+            onClick={() => setIsImageOpen(false)}
+          ></div>
+          <div className="relative rounded-lg">
+            <img
+              src={BoomburstImg}
+              alt="Tampilan Aplikasi Boomburst"
+              className="max-w-[90vw] max-h-[90vh] object-contain"
+            />
+          </div>
+        </div>
+      )}
+    </section>
   );
 };
 

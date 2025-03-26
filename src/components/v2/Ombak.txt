@@ -1,0 +1,207 @@
+import React from "react";
+import { ImDownload2 } from "react-icons/im";
+import { TypeAnimation } from "react-type-animation";
+import Wave from "react-wavify";
+import { Link } from "react-router-dom";
+
+const Home = ({ isNavOpen }) => {
+    return (
+        <section
+            name="home"
+            className="w-full h-screen flex flex-col justify-center items-center px-4 bg-transparent relative overflow-hidden"
+        >
+            {/* Nama dan Title */}
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#00BFFF] text-center font-caveat">
+                Hello there!
+            </h2>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mt-4 text-gray-900 dark:text-gray-100 text-center">
+                I'm Deva Raja
+            </h1>
+
+            {/* Animasi Deskripsi */}
+            {!isNavOpen && (
+                <TypeAnimation
+                    sequence={[
+                        "a UI Designer",
+                        2000,
+                        "a UX Designer",
+                        2000,
+                    ]}
+                    wrapper="div"
+                    cursor={true}
+                    repeat={Infinity}
+                    className="text-lg sm:text-xl md:text-2xl lg:text-2xl font-medium text-gray-800 dark:text-gray-300 mt-4 text-center"
+                />
+            )}
+
+            {/* Tombol */}
+            <div className="font-medium mt-8 flex flex-col sm:flex-row gap-4 justify-center z-10">
+                <Link
+                    to="/web-portfolio/projects"
+                    className="text-white bg-[#00BFFF] hover:bg-[#009ACD] py-3 px-6 rounded-md text-center transition duration-200"
+                    aria-label="Projects"
+                >
+                    Projects
+                </Link>
+                <a
+                    href="https://drive.google.com/file/d/1c5dfdl71wL72OqQfWb9ReBPCIGn6rq8x/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center text-white bg-gray-900 hover:bg-gray-700 dark:bg-gray-800 dark:hover:bg-gray-600 py-3 px-6 rounded-md text-center transition duration-200"
+                    aria-label="Download CV"
+                >
+                    CV <ImDownload2 className="ml-2" />
+                </a>
+            </div>
+
+            {/* Animasi Ombak - Lapisan 1 */}
+            <Wave
+                fill="#00BFFF"
+                paused={false}
+                style={{ position: "absolute", bottom: 0, width: "100%" }}
+                options={{
+                    height: 40,
+                    amplitude: 20,
+                    speed: 0.15,
+                    points: 2,
+                }}
+            />
+            {/* Animasi Ombak - Lapisan 2 */}
+            <Wave
+                fill="#00BFFF"
+                paused={false}
+                style={{ position: "absolute", bottom: 0, width: "100%", opacity: 0.6 }}
+                options={{
+                    height: 30,
+                    amplitude: 15,
+                    speed: 0.15,
+                    points: 2,
+                }}
+            />
+        </section>
+    );
+};
+
+export default Home;
+
+import React, { useEffect, useRef } from "react";
+import { ImDownload2 } from "react-icons/im";
+import { TypeAnimation } from "react-type-animation";
+import { Link } from "react-router-dom";
+
+const Home = ({ isNavOpen }) => {
+  const canvasRef = useRef(null);
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    const ctx = canvas.getContext("2d");
+    let time = 0;
+    let animationFrameId;
+
+    // Sesuaikan ukuran canvas dengan lebar layar
+    const resizeCanvas = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = 120;
+    };
+    resizeCanvas();
+
+    const drawWaves = () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      // Lapisan 1 - Ombak utama
+      ctx.beginPath();
+      ctx.moveTo(0, canvas.height);
+      for (let x = 0; x < canvas.width; x += 0.5) { // Kurangi langkah x untuk detail lebih halus
+        const y = Math.sin(x * 0.01 + time) * 20 + 60;
+        ctx.lineTo(x, y);
+      }
+      ctx.lineTo(canvas.width, canvas.height);
+      ctx.fillStyle = "#00BFFF";
+      ctx.fill();
+
+      // Lapisan 2 - Ombak sekunder dengan efek transparansi
+      ctx.beginPath();
+      ctx.moveTo(0, canvas.height);
+      for (let x = 0; x < canvas.width; x += 0.5) { // Kurangi langkah x untuk detail lebih halus
+        const y = Math.sin(x * 0.015 - time * 0.8) * 15 + 70; // Sesuaikan kecepatan
+        ctx.lineTo(x, y);
+      }
+      ctx.lineTo(canvas.width, canvas.height);
+      ctx.fillStyle = "rgba(0, 191, 255, 0.6)";
+      ctx.fill();
+
+      // Tingkatkan kecepatan animasi sedikit untuk kelancaran
+      time += 0.03; // Kurangi nilai untuk gerakan lebih lambat dan halus
+
+      animationFrameId = requestAnimationFrame(drawWaves);
+    };
+
+    drawWaves();
+
+    // Update ukuran canvas saat window di-resize
+    const handleResize = () => {
+      resizeCanvas();
+    };
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup untuk mencegah memory leak
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      cancelAnimationFrame(animationFrameId);
+    };
+  }, []);
+
+  return (
+    <section
+      name="home"
+      className="w-full h-screen flex flex-col justify-center items-center px-4 bg-transparent relative overflow-hidden"
+    >
+      {/* Nama dan Title */}
+      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#00BFFF] text-center font-caveat">
+        Hello there!
+      </h2>
+      <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mt-4 text-gray-900 dark:text-gray-100 text-center">
+        I'm Deva Raja
+      </h1>
+
+      {/* Animasi Deskripsi */}
+      {!isNavOpen && (
+        <TypeAnimation
+          sequence={["a UI Designer", 2000, "a UX Designer", 2000]}
+          wrapper="div"
+          cursor={true}
+          repeat={Infinity}
+          className="text-lg sm:text-xl md:text-2xl lg:text-2xl font-medium text-gray-800 dark:text-gray-300 mt-4 text-center"
+        />
+      )}
+
+      {/* Tombol */}
+      <div className="font-medium mt-8 flex flex-col sm:flex-row gap-4 justify-center z-10">
+        <Link
+          to="/web-portfolio/projects"
+          className="text-white bg-[#00BFFF] hover:bg-[#009ACD] py-3 px-6 rounded-md text-center transition duration-200"
+          aria-label="Projects"
+        >
+          Projects
+        </Link>
+        <a
+          href="https://drive.google.com/file/d/1c5dfdl71wL72OqQfWb9ReBPCIGn6rq8x/view?usp=drive_link"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center text-white bg-gray-900 hover:bg-gray-700 dark:bg-gray-800 dark:hover:bg-gray-600 py-3 px-6 rounded-md text-center transition duration-200"
+          aria-label="Download CV"
+        >
+          CV <ImDownload2 className="ml-2" />
+        </a>
+      </div>
+
+      {/* Animasi Ombak dengan Canvas */}
+      <canvas
+        ref={canvasRef}
+        style={{ position: "absolute", bottom: 0, width: "100%" }}
+      />
+    </section>
+  );
+};
+
+export default Home;

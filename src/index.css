@@ -3,14 +3,34 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
 @layer base {
   body {
-    @apply font-[Poppins]; /* Change Raleway to Poppins */
+    @apply font-[Poppins];
+    /* Poppins sebagai font default */
   }
+
   li {
     @apply px-4;
     @apply cursor-pointer;
+  }
+
+  .font-caveat {
+    font-family: "Caveat", cursive;
+    /* Ganti ke Caveat */
+  }
+
+  .font-dancingscript {
+    font-family: "Dancing Script", cursive;
+    /* Font handwriting untuk Hello there! */
+  }
+
+  .font-montserrat {
+    font-family: "Montserrat", sans-serif;
+    /* Font untuk "Deva" di logo */
   }
 }
 
@@ -22,11 +42,9 @@
 }
 
 .content-div:hover {
-  background-image: linear-gradient(
-    to right,
-    rgba(233, 202, 78, 0.8),
-    hsla(317, 100%, 53%, 0.8)
-  ) !important;
+  background-image: linear-gradient(to right,
+      rgba(233, 202, 78, 0.8),
+      hsla(317, 100%, 53%, 0.8)) !important;
 }
 
 body {
@@ -34,4 +52,3 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
-
