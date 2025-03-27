@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed top-0 w-full h-[80px] flex items-center px-6 bg-white dark:bg-[#121212] text-gray-900 dark:text-gray-100 font-semibold z-10">
+      <nav className="fixed top-0 w-full h-[70px] flex items-center px-6 bg-white dark:bg-[#121212] text-gray-900 dark:text-gray-100 font-semibold z-10">
         <div className="flex items-center space-x-2">
           <button onClick={() => setIsAvatarOpen(true)} aria-label="Buka avatar">
             <img src={avatar} alt="Avatar Deva" className="w-10 h-10 rounded-full" />
