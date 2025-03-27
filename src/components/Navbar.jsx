@@ -32,12 +32,12 @@ const Navbar = () => {
       <nav className="fixed top-0 w-full h-[64px] flex items-center px-6 bg-white dark:bg-[#121212] text-gray-900 dark:text-gray-100 font-semibold z-10">
         <div className="flex items-center space-x-2">
           <button onClick={() => setIsAvatarOpen(true)} aria-label="Buka avatar">
-            <img src={avatar} alt="Avatar Deva" className="w-10 h-10 rounded-full" />
+            <img src={avatar} alt="Avatar Deva" className="w-8 h-8 rounded-full" />
           </button>
           <a
             href="/web-portfolio"
             onClick={handleReload}
-            className="text-xl font-monserrat text-[#00BFFF] cursor-pointer"
+            className="text-lg font-monserrat text-[#00BFFF] cursor-pointer"
           >
             delta
           </a>
