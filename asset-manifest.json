@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/web-portfolio/static/css/main.facd2eec.css",
-    "main.js": "/web-portfolio/static/js/main.dcfa3866.js",
+    "main.css": "/web-portfolio/static/css/main.1efaaefd.css",
+    "main.js": "/web-portfolio/static/js/main.9a954f77.js",
+    "static/media/Eterna City - Pokémon Platinum.mp3": "/web-portfolio/static/media/Eterna City - Pokémon Platinum.9f888772ce52bc8b2dec.mp3",
+    "static/media/Littleroot Town  - Pokémon Emerald.mp3": "/web-portfolio/static/media/Littleroot Town  - Pokémon Emerald.1a5cf31a10e755e0a105.mp3",
     "static/media/dkampus.png": "/web-portfolio/static/media/dkampus.ee96ab7c0787fabea0a6.png",
     "static/media/boomburst.png": "/web-portfolio/static/media/boomburst.5becede6e07b0bd58e2f.png",
     "static/media/plantique.png": "/web-portfolio/static/media/plantique.b889a29f2a3d8e9b8a29.png",
     "static/media/avatar.png": "/web-portfolio/static/media/avatar.ee9ddf108aa4cd854bc4.png",
     "index.html": "/web-portfolio/index.html",
-    "main.facd2eec.css.map": "/web-portfolio/static/css/main.facd2eec.css.map",
-    "main.dcfa3866.js.map": "/web-portfolio/static/js/main.dcfa3866.js.map"
+    "main.1efaaefd.css.map": "/web-portfolio/static/css/main.1efaaefd.css.map",
+    "main.9a954f77.js.map": "/web-portfolio/static/js/main.9a954f77.js.map"
   },
   "entrypoints": [
-    "static/css/main.facd2eec.css",
-    "static/js/main.dcfa3866.js"
+    "static/css/main.1efaaefd.css",
+    "static/js/main.9a954f77.js"
   ]
 }
