@@ -37,7 +37,7 @@ const Home = ({ isNavOpen }) => {
             {/* Tombol */}
             <div className="font-medium mt-8 flex flex-col sm:flex-row gap-4 justify-center z-10">
                 <Link
-                    to="/web-portfolio/projects"
+                    to="/projects"
                     className="text-white bg-[#00BFFF] hover:bg-[#009ACD] py-3 px-6 rounded-md text-center transition duration-200"
                     aria-label="Projects"
                 >
