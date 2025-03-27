@@ -3,7 +3,7 @@ import { GrInstagram } from "react-icons/gr";
 import { BsLinkedin } from "react-icons/bs";
 import { IoCall } from "react-icons/io5";
 import { SiGmail } from "react-icons/si";
-import avatar from "../../assets/avatar.png";
+import avatar from "../assets/avatar.png";
 import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
