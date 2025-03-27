@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Particles from "./components/ParticlesComponent";
 import Home from "./components/Home";
@@ -11,8 +11,8 @@ const App = () => {
         <Particles />
         <Navbar />
         <Routes>
-          <Route path="/web-portfolio" element={<Home />} />
-          <Route path="/web-portfolio/projects" element={<Projects />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
       </div>
     </Router>
