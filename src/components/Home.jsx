@@ -1,14 +1,13 @@
 import React from "react";
 import { ImDownload2 } from "react-icons/im";
 import { TypeAnimation } from "react-type-animation";
-import Wave from "react-wavify";
 import { Link } from "react-router-dom";
 
 const Home = ({ isNavOpen }) => {
     return (
         <section
             name="home"
-            className="w-full h-screen flex flex-col justify-center items-center px-4 bg-transparent relative overflow-hidden"
+            className="w-full h-screen flex flex-col justify-center items-center px-4 bg-white dark:bg-[#121212] relative overflow-hidden"
         >
             {/* Nama dan Title */}
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#00BFFF] text-center font-caveat">
@@ -53,31 +52,6 @@ const Home = ({ isNavOpen }) => {
                     CV <ImDownload2 className="ml-2" />
                 </a>
             </div>
-
-            {/* Animasi Ombak - Lapisan 1 */}
-            <Wave
-                fill="#00BFFF"
-                paused={false}
-                style={{ position: "absolute", bottom: 0, width: "100%" }}
-                options={{
-                    height: 40,
-                    amplitude: 20,
-                    speed: 0.15,
-                    points: 2,
-                }}
-            />
-            {/* Animasi Ombak - Lapisan 2 */}
-            <Wave
-                fill="#00BFFF"
-                paused={false}
-                style={{ position: "absolute", bottom: 0, width: "100%", opacity: 0.6 }}
-                options={{
-                    height: 30,
-                    amplitude: 15,
-                    speed: 0.15,
-                    points: 2,
-                }}
-            />
         </section>
     );
 };

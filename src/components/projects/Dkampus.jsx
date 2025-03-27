@@ -5,7 +5,7 @@ const Dkampus = () => {
   const [isImageOpen, setIsImageOpen] = useState(false);
 
   return (
-    <section className="bg-transparent text-gray-900 dark:text-white pt-4 sm:pt-6 pb-12 lg:pb-20 px-6 sm:px-8 md:px-16 lg:px-24">
+    <section className="bg-transparent text-gray-900 dark:text-white pt-4 pb-12 lg:pb-20 px-6 sm:px-8 md:px-16 lg:px-24">
       <div className="max-w-5xl mx-auto">
         <p className="text-gray-500 dark:text-[#5f606a] text-xs md:text-sm mb-6 tracking-wider">
           December 2024
