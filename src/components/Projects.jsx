@@ -1,7 +1,7 @@
 import React from "react";
-import Dkampus from "./project/Dkampus";
-import Plantique from "./project/Plantique";
-import Boomburst from "./project/Boomburst";
+import Dkampus from "./projects/Dkampus";
+import Plantique from "./projects/Plantique";
+import Boomburst from "./projects/Boomburst";
 
 const Projects = () => {
   return (
