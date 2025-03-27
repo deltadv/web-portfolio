@@ -1,19 +1,21 @@
 {
   "files": {
     "main.css": "/web-portfolio/static/css/main.1acfc0fd.css",
-    "main.js": "/web-portfolio/static/js/main.53fa1ff3.js",
-    "static/media/Eterna City - Pokémon Platinum.mp3": "/web-portfolio/static/media/Eterna City - Pokémon Platinum.9f888772ce52bc8b2dec.mp3",
-    "static/media/Littleroot Town  - Pokémon Emerald.mp3": "/web-portfolio/static/media/Littleroot Town  - Pokémon Emerald.1a5cf31a10e755e0a105.mp3",
+    "main.js": "/web-portfolio/static/js/main.a4f3b511.js",
+    "static/media/Littleroot Town  - Pokémon Emerald.mp3": "/web-portfolio/static/media/Littleroot Town  - Pokémon Emerald.8ef5663a5312783c814a.mp3",
+    "static/media/Verdanturf Town - Pokémon Emerald.mp3": "/web-portfolio/static/media/Verdanturf Town - Pokémon Emerald.6c994783d773b2ba1636.mp3",
+    "static/media/Eterna City - Pokémon Platinum.mp3": "/web-portfolio/static/media/Eterna City - Pokémon Platinum.99ea5058a27e4becdf74.mp3",
+    "static/media/Twinleaf Town - Pokémon Platinum.mp3": "/web-portfolio/static/media/Twinleaf Town - Pokémon Platinum.af5adb9e69486ff162be.mp3",
     "static/media/dkampus.png": "/web-portfolio/static/media/dkampus.ee96ab7c0787fabea0a6.png",
     "static/media/boomburst.png": "/web-portfolio/static/media/boomburst.5becede6e07b0bd58e2f.png",
     "static/media/plantique.png": "/web-portfolio/static/media/plantique.b889a29f2a3d8e9b8a29.png",
     "static/media/avatar.png": "/web-portfolio/static/media/avatar.ee9ddf108aa4cd854bc4.png",
     "index.html": "/web-portfolio/index.html",
     "main.1acfc0fd.css.map": "/web-portfolio/static/css/main.1acfc0fd.css.map",
-    "main.53fa1ff3.js.map": "/web-portfolio/static/js/main.53fa1ff3.js.map"
+    "main.a4f3b511.js.map": "/web-portfolio/static/js/main.a4f3b511.js.map"
   },
   "entrypoints": [
     "static/css/main.1acfc0fd.css",
-    "static/js/main.53fa1ff3.js"
+    "static/js/main.a4f3b511.js"
   ]
 }
