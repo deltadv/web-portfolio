@@ -42,7 +42,7 @@ const MusicPlayer = () => {
     };
 
     return (
-        <div className="fixed bottom-4 right-4 w-44 p-3 bg-white dark:bg-[#1E1E1E] rounded-lg shadow-lg z-20 text-gray-900 dark:text-gray-100 border border-2 border-[#00bfff]">
+        <div className="fixed bottom-4 right-4 w-44 p-3 bg-white dark:bg-[#1E1E1E] rounded-lg shadow-lg z-20 text-gray-900 dark:text-gray-100 border-2 border-[#00bfff]">
             {/* Nama lagu dan penyanyi */}
             <div className="text-center font-monserrat">
                 <div className="font-semibold text-xs mb-1 truncate">
