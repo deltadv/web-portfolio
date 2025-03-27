@@ -2,11 +2,15 @@ import { useState, useRef, useEffect } from "react";
 import { FaPlay, FaPause, FaBackwardStep, FaForwardStep, FaSpotify } from "react-icons/fa6";
 import LittlerootTown from "../assets/Littleroot Town  - Pokémon Emerald.mp3";
 import EternaCity from "../assets/Eterna City - Pokémon Platinum.mp3";
+import TwinleafTown from "../assets/Twinleaf Town - Pokémon Platinum.mp3";
+import VerdanturfTown from "../assets/Verdanturf Town - Pokémon Emerald.mp3";
 
 const MusicPlayer = () => {
     const playlist = [
         { title: "Littleroot Town", artist: "Pokémon Emerald", src: LittlerootTown },
         { title: "Eterna City", artist: "Pokémon Platinum", src: EternaCity },
+        { title: "Twinleaf Town", artist: "Pokémon Platinum", src: TwinleafTown },
+        { title: "Verdanturf Town", artist: "Pokémon Emerald", src: VerdanturfTown }
     ];
 
     const [currentTrack, setCurrentTrack] = useState(0);
