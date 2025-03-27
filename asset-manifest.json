@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/web-portfolio/static/css/main.7ef5e3d8.css",
-    "main.js": "/web-portfolio/static/js/main.a1b64b78.js",
+    "main.js": "/web-portfolio/static/js/main.31e14b13.js",
     "static/media/Eterna City - Pokémon Platinum.mp3": "/web-portfolio/static/media/Eterna City - Pokémon Platinum.9f888772ce52bc8b2dec.mp3",
     "static/media/Littleroot Town  - Pokémon Emerald.mp3": "/web-portfolio/static/media/Littleroot Town  - Pokémon Emerald.1a5cf31a10e755e0a105.mp3",
     "static/media/dkampus.png": "/web-portfolio/static/media/dkampus.ee96ab7c0787fabea0a6.png",
@@ -10,10 +10,10 @@
     "static/media/avatar.png": "/web-portfolio/static/media/avatar.ee9ddf108aa4cd854bc4.png",
     "index.html": "/web-portfolio/index.html",
     "main.7ef5e3d8.css.map": "/web-portfolio/static/css/main.7ef5e3d8.css.map",
-    "main.a1b64b78.js.map": "/web-portfolio/static/js/main.a1b64b78.js.map"
+    "main.31e14b13.js.map": "/web-portfolio/static/js/main.31e14b13.js.map"
   },
   "entrypoints": [
     "static/css/main.7ef5e3d8.css",
-    "static/js/main.a1b64b78.js"
+    "static/js/main.31e14b13.js"
   ]
 }
