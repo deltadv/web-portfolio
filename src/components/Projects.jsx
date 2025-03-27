@@ -5,7 +5,7 @@ import Boomburst from "./projects/Boomburst";
 
 const Projects = () => {
   return (
-    <section className="w-full min-h-screen bg-white dark:bg-[#121212] pt-20">
+    <section className="w-full min-h-screen bg-white dark:bg-[#121212] pt-16">
       <Boomburst />
       <Plantique />
       <Dkampus />
